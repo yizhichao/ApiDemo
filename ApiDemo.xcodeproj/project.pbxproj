@@ -8,24 +8,180 @@
 
 /* Begin PBXBuildFile section */
 		A6D4D26F2088C09200350D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D26E2088C09200350D1C /* AppDelegate.m */; };
-		A6D4D2722088C09200350D1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2712088C09200350D1C /* ViewController.m */; };
 		A6D4D2752088C09200350D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D4D2732088C09200350D1C /* Main.storyboard */; };
 		A6D4D2772088C09200350D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D4D2762088C09200350D1C /* Assets.xcassets */; };
 		A6D4D27A2088C09200350D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D4D2782088C09200350D1C /* LaunchScreen.storyboard */; };
 		A6D4D27D2088C09200350D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D27C2088C09200350D1C /* main.m */; };
+		A6D4D2A42088C0DF00350D1C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2832088C0DE00350D1C /* PlayerViewController.m */; };
+		A6D4D2A52088C0DF00350D1C /* ApiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2862088C0DE00350D1C /* ApiConfig.m */; };
+		A6D4D2A62088C0DF00350D1C /* DXExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D28B2088C0DF00350D1C /* DXExtensionConst.m */; };
+		A6D4D2A72088C0DF00350D1C /* DXFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D28D2088C0DF00350D1C /* DXFoundation.m */; };
+		A6D4D2A82088C0DF00350D1C /* DXProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D28F2088C0DF00350D1C /* DXProperty.m */; };
+		A6D4D2A92088C0DF00350D1C /* DXPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2912088C0DF00350D1C /* DXPropertyKey.m */; };
+		A6D4D2AA2088C0DF00350D1C /* DXPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2932088C0DF00350D1C /* DXPropertyType.m */; };
+		A6D4D2AB2088C0DF00350D1C /* NSObject+DXClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2952088C0DF00350D1C /* NSObject+DXClass.m */; };
+		A6D4D2AC2088C0DF00350D1C /* NSObject+DXCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2972088C0DF00350D1C /* NSObject+DXCoding.m */; };
+		A6D4D2AD2088C0DF00350D1C /* NSObject+DXKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2992088C0DF00350D1C /* NSObject+DXKeyValue.m */; };
+		A6D4D2AE2088C0DF00350D1C /* NSObject+DXProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D29B2088C0DF00350D1C /* NSObject+DXProperty.m */; };
+		A6D4D2AF2088C0DF00350D1C /* NSString+DXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D29D2088C0DF00350D1C /* NSString+DXExtension.m */; };
+		A6D4D2B02088C0DF00350D1C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D29E2088C0DF00350D1C /* LoginViewController.m */; };
+		A6D4D2B12088C0DF00350D1C /* CameraInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2A12088C0DF00350D1C /* CameraInfo.m */; };
+		A6D4D2B22088C0DF00350D1C /* CameraListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2A32088C0DF00350D1C /* CameraListTableViewController.m */; };
+		A6D4D3072088C0ED00350D1C /* GA_ARO_Client.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2BF2088C0ED00350D1C /* GA_ARO_Client.m */; };
+		A6D4D3082088C0ED00350D1C /* GA_ARO_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2C12088C0ED00350D1C /* GA_ARO_Request.m */; };
+		A6D4D3092088C0ED00350D1C /* GA_ARO_Response.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2C32088C0ED00350D1C /* GA_ARO_Response.m */; };
+		A6D4D30A2088C0ED00350D1C /* GA_ARO_HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2C82088C0ED00350D1C /* GA_ARO_HTTPSessionManager.m */; };
+		A6D4D30B2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2CB2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.m */; };
+		A6D4D30C2088C0ED00350D1C /* GA_ARO_SecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2CD2088C0ED00350D1C /* GA_ARO_SecurityPolicy.m */; };
+		A6D4D30D2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2CF2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.m */; };
+		A6D4D30E2088C0ED00350D1C /* GA_ARO_URLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2D12088C0ED00350D1C /* GA_ARO_URLResponseSerialization.m */; };
+		A6D4D30F2088C0ED00350D1C /* GA_ARO_URLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2D32088C0ED00350D1C /* GA_ARO_URLSessionManager.m */; };
+		A6D4D3102088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2D52088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.m */; };
+		A6D4D3112088C0ED00350D1C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6D4D2D62088C0ED00350D1C /* LICENSE */; };
+		A6D4D3122088C0ED00350D1C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6D4D2D72088C0ED00350D1C /* README.md */; };
+		A6D4D3132088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2DA2088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.m */; };
+		A6D4D3142088C0ED00350D1C /* GA_ARO_ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2DC2088C0ED00350D1C /* GA_ARO_ImageDownloader.m */; };
+		A6D4D3152088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2DE2088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.m */; };
+		A6D4D3162088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2E02088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.m */; };
+		A6D4D3172088C0ED00350D1C /* UIButton+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2E22088C0ED00350D1C /* UIButton+GA_ARO_Networking.m */; };
+		A6D4D3182088C0ED00350D1C /* UIImageView+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2E52088C0ED00350D1C /* UIImageView+GA_ARO_Networking.m */; };
+		A6D4D3192088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2E82088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.m */; };
+		A6D4D31A2088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2EA2088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.m */; };
+		A6D4D31B2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2EC2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.m */; };
+		A6D4D31C2088C0ED00350D1C /* GA_ARO_HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2F02088C0ED00350D1C /* GA_ARO_HttpUtil.m */; };
+		A6D4D31D2088C0ED00350D1C /* GA_ARO_SignUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2F22088C0ED00350D1C /* GA_ARO_SignUtil.m */; };
+		A6D4D31E2088C0ED00350D1C /* GAOpen8200ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D2F62088C0ED00350D1C /* GAOpen8200ApiClient.m */; };
+		A6D4D31F2088C0ED00350D1C /* GA_HIKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D3012088C0ED00350D1C /* GA_HIKPlayer.m */; };
+		A6D4D3202088C0ED00350D1C /* GA_StreamClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D3042088C0ED00350D1C /* GA_StreamClient.mm */; };
+		A6D4D3212088C0ED00350D1C /* NSDate+HIKPlayerSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4D3062088C0ED00350D1C /* NSDate+HIKPlayerSDK.m */; };
+		A6D4D3242088C0F900350D1C /* StreamClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4D3222088C0F900350D1C /* StreamClient.framework */; };
+		A6D4D3252088C0F900350D1C /* StreamClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4D3222088C0F900350D1C /* StreamClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6D4D3262088C0F900350D1C /* PlayCtrl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4D3232088C0F900350D1C /* PlayCtrl.framework */; };
+		A6D4D3272088C0F900350D1C /* PlayCtrl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4D3232088C0F900350D1C /* PlayCtrl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6D4D3282088C0F900350D1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6D4D3252088C0F900350D1C /* StreamClient.framework in Embed Frameworks */,
+				A6D4D3272088C0F900350D1C /* PlayCtrl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A6D4D26A2088C09200350D1C /* ApiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D4D26D2088C09200350D1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6D4D26E2088C09200350D1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A6D4D2702088C09200350D1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6D4D2712088C09200350D1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6D4D2742088C09200350D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D4D2762088C09200350D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D4D2792088C09200350D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D4D27B2088C09200350D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D4D27C2088C09200350D1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6D4D2832088C0DE00350D1C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		A6D4D2842088C0DE00350D1C /* CameraListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraListTableViewController.h; sourceTree = "<group>"; };
+		A6D4D2852088C0DE00350D1C /* ApiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiConfig.h; sourceTree = "<group>"; };
+		A6D4D2862088C0DE00350D1C /* ApiConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiConfig.m; sourceTree = "<group>"; };
+		A6D4D2872088C0DF00350D1C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		A6D4D2892088C0DF00350D1C /* DXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXExtension.h; sourceTree = "<group>"; };
+		A6D4D28A2088C0DF00350D1C /* DXExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXExtensionConst.h; sourceTree = "<group>"; };
+		A6D4D28B2088C0DF00350D1C /* DXExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXExtensionConst.m; sourceTree = "<group>"; };
+		A6D4D28C2088C0DF00350D1C /* DXFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFoundation.h; sourceTree = "<group>"; };
+		A6D4D28D2088C0DF00350D1C /* DXFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFoundation.m; sourceTree = "<group>"; };
+		A6D4D28E2088C0DF00350D1C /* DXProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXProperty.h; sourceTree = "<group>"; };
+		A6D4D28F2088C0DF00350D1C /* DXProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXProperty.m; sourceTree = "<group>"; };
+		A6D4D2902088C0DF00350D1C /* DXPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPropertyKey.h; sourceTree = "<group>"; };
+		A6D4D2912088C0DF00350D1C /* DXPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPropertyKey.m; sourceTree = "<group>"; };
+		A6D4D2922088C0DF00350D1C /* DXPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPropertyType.h; sourceTree = "<group>"; };
+		A6D4D2932088C0DF00350D1C /* DXPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPropertyType.m; sourceTree = "<group>"; };
+		A6D4D2942088C0DF00350D1C /* NSObject+DXClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXClass.h"; sourceTree = "<group>"; };
+		A6D4D2952088C0DF00350D1C /* NSObject+DXClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXClass.m"; sourceTree = "<group>"; };
+		A6D4D2962088C0DF00350D1C /* NSObject+DXCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXCoding.h"; sourceTree = "<group>"; };
+		A6D4D2972088C0DF00350D1C /* NSObject+DXCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXCoding.m"; sourceTree = "<group>"; };
+		A6D4D2982088C0DF00350D1C /* NSObject+DXKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXKeyValue.h"; sourceTree = "<group>"; };
+		A6D4D2992088C0DF00350D1C /* NSObject+DXKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXKeyValue.m"; sourceTree = "<group>"; };
+		A6D4D29A2088C0DF00350D1C /* NSObject+DXProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXProperty.h"; sourceTree = "<group>"; };
+		A6D4D29B2088C0DF00350D1C /* NSObject+DXProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXProperty.m"; sourceTree = "<group>"; };
+		A6D4D29C2088C0DF00350D1C /* NSString+DXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DXExtension.h"; sourceTree = "<group>"; };
+		A6D4D29D2088C0DF00350D1C /* NSString+DXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DXExtension.m"; sourceTree = "<group>"; };
+		A6D4D29E2088C0DF00350D1C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A6D4D2A02088C0DF00350D1C /* CameraInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraInfo.h; sourceTree = "<group>"; };
+		A6D4D2A12088C0DF00350D1C /* CameraInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraInfo.m; sourceTree = "<group>"; };
+		A6D4D2A22088C0DF00350D1C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A6D4D2A32088C0DF00350D1C /* CameraListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraListTableViewController.m; sourceTree = "<group>"; };
+		A6D4D2B52088C0ED00350D1C /* C_GA_ArtemisOpenSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C_GA_ArtemisOpenSDK.h; sourceTree = "<group>"; };
+		A6D4D2B82088C0ED00350D1C /* GA_ARO_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_Constants.h; sourceTree = "<group>"; };
+		A6D4D2B92088C0ED00350D1C /* GA_ARO_ContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_ContentType.h; sourceTree = "<group>"; };
+		A6D4D2BA2088C0ED00350D1C /* GA_ARO_HttpHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_HttpHeader.h; sourceTree = "<group>"; };
+		A6D4D2BB2088C0ED00350D1C /* GA_ARO_HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_HttpMethod.h; sourceTree = "<group>"; };
+		A6D4D2BC2088C0ED00350D1C /* GA_ARO_HttpSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_HttpSchema.h; sourceTree = "<group>"; };
+		A6D4D2BD2088C0ED00350D1C /* GA_ARO_SystemHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_SystemHeader.h; sourceTree = "<group>"; };
+		A6D4D2BE2088C0ED00350D1C /* GA_ARO_Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_Client.h; sourceTree = "<group>"; };
+		A6D4D2BF2088C0ED00350D1C /* GA_ARO_Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_Client.m; sourceTree = "<group>"; };
+		A6D4D2C02088C0ED00350D1C /* GA_ARO_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_Request.h; sourceTree = "<group>"; };
+		A6D4D2C12088C0ED00350D1C /* GA_ARO_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_Request.m; sourceTree = "<group>"; };
+		A6D4D2C22088C0ED00350D1C /* GA_ARO_Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_Response.h; sourceTree = "<group>"; };
+		A6D4D2C32088C0ED00350D1C /* GA_ARO_Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_Response.m; sourceTree = "<group>"; };
+		A6D4D2C72088C0ED00350D1C /* GA_ARO_HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_HTTPSessionManager.h; sourceTree = "<group>"; };
+		A6D4D2C82088C0ED00350D1C /* GA_ARO_HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_HTTPSessionManager.m; sourceTree = "<group>"; };
+		A6D4D2C92088C0ED00350D1C /* GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_Networking.h; sourceTree = "<group>"; };
+		A6D4D2CA2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_NetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A6D4D2CB2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_NetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A6D4D2CC2088C0ED00350D1C /* GA_ARO_SecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_SecurityPolicy.h; sourceTree = "<group>"; };
+		A6D4D2CD2088C0ED00350D1C /* GA_ARO_SecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_SecurityPolicy.m; sourceTree = "<group>"; };
+		A6D4D2CE2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_URLRequestSerialization.h; sourceTree = "<group>"; };
+		A6D4D2CF2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_URLRequestSerialization.m; sourceTree = "<group>"; };
+		A6D4D2D02088C0ED00350D1C /* GA_ARO_URLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_URLResponseSerialization.h; sourceTree = "<group>"; };
+		A6D4D2D12088C0ED00350D1C /* GA_ARO_URLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_URLResponseSerialization.m; sourceTree = "<group>"; };
+		A6D4D2D22088C0ED00350D1C /* GA_ARO_URLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_URLSessionManager.h; sourceTree = "<group>"; };
+		A6D4D2D32088C0ED00350D1C /* GA_ARO_URLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_URLSessionManager.m; sourceTree = "<group>"; };
+		A6D4D2D42088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GA_ARO_HTTPSessionManager+Synchronous.h"; sourceTree = "<group>"; };
+		A6D4D2D52088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GA_ARO_HTTPSessionManager+Synchronous.m"; sourceTree = "<group>"; };
+		A6D4D2D62088C0ED00350D1C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6D4D2D72088C0ED00350D1C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A6D4D2D92088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_AutoPurgingImageCache.h; sourceTree = "<group>"; };
+		A6D4D2DA2088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_AutoPurgingImageCache.m; sourceTree = "<group>"; };
+		A6D4D2DB2088C0ED00350D1C /* GA_ARO_ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_ImageDownloader.h; sourceTree = "<group>"; };
+		A6D4D2DC2088C0ED00350D1C /* GA_ARO_ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_ImageDownloader.m; sourceTree = "<group>"; };
+		A6D4D2DD2088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_NetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		A6D4D2DE2088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_NetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		A6D4D2DF2088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E02088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2E12088C0ED00350D1C /* UIButton+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E22088C0ED00350D1C /* UIButton+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2E32088C0ED00350D1C /* UIImage+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E42088C0ED00350D1C /* UIImageView+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E52088C0ED00350D1C /* UIImageView+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2E62088C0ED00350D1C /* UIKit+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E72088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2E82088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2E92088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2EA2088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2EB2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+GA_ARO_Networking.h"; sourceTree = "<group>"; };
+		A6D4D2EC2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+GA_ARO_Networking.m"; sourceTree = "<group>"; };
+		A6D4D2EF2088C0ED00350D1C /* GA_ARO_HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_HttpUtil.h; sourceTree = "<group>"; };
+		A6D4D2F02088C0ED00350D1C /* GA_ARO_HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_HttpUtil.m; sourceTree = "<group>"; };
+		A6D4D2F12088C0ED00350D1C /* GA_ARO_SignUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_ARO_SignUtil.h; sourceTree = "<group>"; };
+		A6D4D2F22088C0ED00350D1C /* GA_ARO_SignUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_ARO_SignUtil.m; sourceTree = "<group>"; };
+		A6D4D2F52088C0ED00350D1C /* GAOpen8200ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAOpen8200ApiClient.h; sourceTree = "<group>"; };
+		A6D4D2F62088C0ED00350D1C /* GAOpen8200ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAOpen8200ApiClient.m; sourceTree = "<group>"; };
+		A6D4D2F82088C0ED00350D1C /* GA_8200URL_Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_8200URL_Const.h; sourceTree = "<group>"; };
+		A6D4D2FC2088C0ED00350D1C /* C_GA_Open8200SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C_GA_Open8200SDK.h; sourceTree = "<group>"; };
+		A6D4D2FE2088C0ED00350D1C /* HIKPlayerSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIKPlayerSDK.h; sourceTree = "<group>"; };
+		A6D4D3002088C0ED00350D1C /* GA_HIKPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_HIKPlayer.h; sourceTree = "<group>"; };
+		A6D4D3012088C0ED00350D1C /* GA_HIKPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GA_HIKPlayer.m; sourceTree = "<group>"; };
+		A6D4D3032088C0ED00350D1C /* GA_StreamClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_StreamClient.h; sourceTree = "<group>"; };
+		A6D4D3042088C0ED00350D1C /* GA_StreamClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GA_StreamClient.mm; sourceTree = "<group>"; };
+		A6D4D3052088C0ED00350D1C /* NSDate+HIKPlayerSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HIKPlayerSDK.h"; sourceTree = "<group>"; };
+		A6D4D3062088C0ED00350D1C /* NSDate+HIKPlayerSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HIKPlayerSDK.m"; sourceTree = "<group>"; };
+		A6D4D3222088C0F900350D1C /* StreamClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StreamClient.framework; path = Frameworks/StreamClient.framework; sourceTree = "<group>"; };
+		A6D4D3232088C0F900350D1C /* PlayCtrl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlayCtrl.framework; path = Frameworks/PlayCtrl.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D4D3242088C0F900350D1C /* StreamClient.framework in Frameworks */,
+				A6D4D3262088C0F900350D1C /* PlayCtrl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +200,9 @@
 		A6D4D2612088C09200350D1C = {
 			isa = PBXGroup;
 			children = (
+				A6D4D3232088C0F900350D1C /* PlayCtrl.framework */,
+				A6D4D3222088C0F900350D1C /* StreamClient.framework */,
+				A6D4D2B32088C0ED00350D1C /* SDK */,
 				A6D4D26C2088C09200350D1C /* ApiDemo */,
 				A6D4D26B2088C09200350D1C /* Products */,
 			);
@@ -60,8 +221,16 @@
 			children = (
 				A6D4D26D2088C09200350D1C /* AppDelegate.h */,
 				A6D4D26E2088C09200350D1C /* AppDelegate.m */,
-				A6D4D2702088C09200350D1C /* ViewController.h */,
-				A6D4D2712088C09200350D1C /* ViewController.m */,
+				A6D4D2852088C0DE00350D1C /* ApiConfig.h */,
+				A6D4D2862088C0DE00350D1C /* ApiConfig.m */,
+				A6D4D2842088C0DE00350D1C /* CameraListTableViewController.h */,
+				A6D4D2A32088C0DF00350D1C /* CameraListTableViewController.m */,
+				A6D4D2882088C0DF00350D1C /* DXExtension */,
+				A6D4D2A22088C0DF00350D1C /* LoginViewController.h */,
+				A6D4D29E2088C0DF00350D1C /* LoginViewController.m */,
+				A6D4D29F2088C0DF00350D1C /* Model */,
+				A6D4D2872088C0DF00350D1C /* PlayerViewController.h */,
+				A6D4D2832088C0DE00350D1C /* PlayerViewController.m */,
 				A6D4D2732088C09200350D1C /* Main.storyboard */,
 				A6D4D2762088C09200350D1C /* Assets.xcassets */,
 				A6D4D2782088C09200350D1C /* LaunchScreen.storyboard */,
@@ -69,6 +238,259 @@
 				A6D4D27C2088C09200350D1C /* main.m */,
 			);
 			path = ApiDemo;
+			sourceTree = "<group>";
+		};
+		A6D4D2882088C0DF00350D1C /* DXExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2892088C0DF00350D1C /* DXExtension.h */,
+				A6D4D28A2088C0DF00350D1C /* DXExtensionConst.h */,
+				A6D4D28B2088C0DF00350D1C /* DXExtensionConst.m */,
+				A6D4D28C2088C0DF00350D1C /* DXFoundation.h */,
+				A6D4D28D2088C0DF00350D1C /* DXFoundation.m */,
+				A6D4D28E2088C0DF00350D1C /* DXProperty.h */,
+				A6D4D28F2088C0DF00350D1C /* DXProperty.m */,
+				A6D4D2902088C0DF00350D1C /* DXPropertyKey.h */,
+				A6D4D2912088C0DF00350D1C /* DXPropertyKey.m */,
+				A6D4D2922088C0DF00350D1C /* DXPropertyType.h */,
+				A6D4D2932088C0DF00350D1C /* DXPropertyType.m */,
+				A6D4D2942088C0DF00350D1C /* NSObject+DXClass.h */,
+				A6D4D2952088C0DF00350D1C /* NSObject+DXClass.m */,
+				A6D4D2962088C0DF00350D1C /* NSObject+DXCoding.h */,
+				A6D4D2972088C0DF00350D1C /* NSObject+DXCoding.m */,
+				A6D4D2982088C0DF00350D1C /* NSObject+DXKeyValue.h */,
+				A6D4D2992088C0DF00350D1C /* NSObject+DXKeyValue.m */,
+				A6D4D29A2088C0DF00350D1C /* NSObject+DXProperty.h */,
+				A6D4D29B2088C0DF00350D1C /* NSObject+DXProperty.m */,
+				A6D4D29C2088C0DF00350D1C /* NSString+DXExtension.h */,
+				A6D4D29D2088C0DF00350D1C /* NSString+DXExtension.m */,
+			);
+			path = DXExtension;
+			sourceTree = "<group>";
+		};
+		A6D4D29F2088C0DF00350D1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2A02088C0DF00350D1C /* CameraInfo.h */,
+				A6D4D2A12088C0DF00350D1C /* CameraInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6D4D2B32088C0ED00350D1C /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2B42088C0ED00350D1C /* C_GA_ArtemisOpenSDK */,
+				A6D4D2F32088C0ED00350D1C /* C_GA_Open8200SDK */,
+				A6D4D2FD2088C0ED00350D1C /* HIKPlayerSDK */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		A6D4D2B42088C0ED00350D1C /* C_GA_ArtemisOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2B52088C0ED00350D1C /* C_GA_ArtemisOpenSDK.h */,
+				A6D4D2B62088C0ED00350D1C /* config */,
+				A6D4D2B72088C0ED00350D1C /* constant */,
+				A6D4D2BE2088C0ED00350D1C /* GA_ARO_Client.h */,
+				A6D4D2BF2088C0ED00350D1C /* GA_ARO_Client.m */,
+				A6D4D2C02088C0ED00350D1C /* GA_ARO_Request.h */,
+				A6D4D2C12088C0ED00350D1C /* GA_ARO_Request.m */,
+				A6D4D2C22088C0ED00350D1C /* GA_ARO_Response.h */,
+				A6D4D2C32088C0ED00350D1C /* GA_ARO_Response.m */,
+				A6D4D2C42088C0ED00350D1C /* lib */,
+				A6D4D2EE2088C0ED00350D1C /* util */,
+			);
+			path = C_GA_ArtemisOpenSDK;
+			sourceTree = "<group>";
+		};
+		A6D4D2B62088C0ED00350D1C /* config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A6D4D2B72088C0ED00350D1C /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2B82088C0ED00350D1C /* GA_ARO_Constants.h */,
+				A6D4D2B92088C0ED00350D1C /* GA_ARO_ContentType.h */,
+				A6D4D2BA2088C0ED00350D1C /* GA_ARO_HttpHeader.h */,
+				A6D4D2BB2088C0ED00350D1C /* GA_ARO_HttpMethod.h */,
+				A6D4D2BC2088C0ED00350D1C /* GA_ARO_HttpSchema.h */,
+				A6D4D2BD2088C0ED00350D1C /* GA_ARO_SystemHeader.h */,
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		A6D4D2C42088C0ED00350D1C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2C52088C0ED00350D1C /* AFNetworking */,
+				A6D4D2ED2088C0ED00350D1C /* DXExtension */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A6D4D2C52088C0ED00350D1C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2C62088C0ED00350D1C /* AFNetworking */,
+				A6D4D2D42088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.h */,
+				A6D4D2D52088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.m */,
+				A6D4D2D62088C0ED00350D1C /* LICENSE */,
+				A6D4D2D72088C0ED00350D1C /* README.md */,
+				A6D4D2D82088C0ED00350D1C /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A6D4D2C62088C0ED00350D1C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2C72088C0ED00350D1C /* GA_ARO_HTTPSessionManager.h */,
+				A6D4D2C82088C0ED00350D1C /* GA_ARO_HTTPSessionManager.m */,
+				A6D4D2C92088C0ED00350D1C /* GA_ARO_Networking.h */,
+				A6D4D2CA2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.h */,
+				A6D4D2CB2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.m */,
+				A6D4D2CC2088C0ED00350D1C /* GA_ARO_SecurityPolicy.h */,
+				A6D4D2CD2088C0ED00350D1C /* GA_ARO_SecurityPolicy.m */,
+				A6D4D2CE2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.h */,
+				A6D4D2CF2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.m */,
+				A6D4D2D02088C0ED00350D1C /* GA_ARO_URLResponseSerialization.h */,
+				A6D4D2D12088C0ED00350D1C /* GA_ARO_URLResponseSerialization.m */,
+				A6D4D2D22088C0ED00350D1C /* GA_ARO_URLSessionManager.h */,
+				A6D4D2D32088C0ED00350D1C /* GA_ARO_URLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A6D4D2D82088C0ED00350D1C /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2D92088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.h */,
+				A6D4D2DA2088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.m */,
+				A6D4D2DB2088C0ED00350D1C /* GA_ARO_ImageDownloader.h */,
+				A6D4D2DC2088C0ED00350D1C /* GA_ARO_ImageDownloader.m */,
+				A6D4D2DD2088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.h */,
+				A6D4D2DE2088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.m */,
+				A6D4D2DF2088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.h */,
+				A6D4D2E02088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.m */,
+				A6D4D2E12088C0ED00350D1C /* UIButton+GA_ARO_Networking.h */,
+				A6D4D2E22088C0ED00350D1C /* UIButton+GA_ARO_Networking.m */,
+				A6D4D2E32088C0ED00350D1C /* UIImage+GA_ARO_Networking.h */,
+				A6D4D2E42088C0ED00350D1C /* UIImageView+GA_ARO_Networking.h */,
+				A6D4D2E52088C0ED00350D1C /* UIImageView+GA_ARO_Networking.m */,
+				A6D4D2E62088C0ED00350D1C /* UIKit+GA_ARO_Networking.h */,
+				A6D4D2E72088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.h */,
+				A6D4D2E82088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.m */,
+				A6D4D2E92088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.h */,
+				A6D4D2EA2088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.m */,
+				A6D4D2EB2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.h */,
+				A6D4D2EC2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		A6D4D2ED2088C0ED00350D1C /* DXExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DXExtension;
+			sourceTree = "<group>";
+		};
+		A6D4D2EE2088C0ED00350D1C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2EF2088C0ED00350D1C /* GA_ARO_HttpUtil.h */,
+				A6D4D2F02088C0ED00350D1C /* GA_ARO_HttpUtil.m */,
+				A6D4D2F12088C0ED00350D1C /* GA_ARO_SignUtil.h */,
+				A6D4D2F22088C0ED00350D1C /* GA_ARO_SignUtil.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		A6D4D2F32088C0ED00350D1C /* C_GA_Open8200SDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2F42088C0ED00350D1C /* 8200_Api */,
+				A6D4D2F72088C0ED00350D1C /* 8200_Const */,
+				A6D4D2FA2088C0ED00350D1C /* 8200_lib */,
+				A6D4D2FB2088C0ED00350D1C /* 8200_Tool */,
+				A6D4D2FC2088C0ED00350D1C /* C_GA_Open8200SDK.h */,
+			);
+			path = C_GA_Open8200SDK;
+			sourceTree = "<group>";
+		};
+		A6D4D2F42088C0ED00350D1C /* 8200_Api */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2F52088C0ED00350D1C /* GAOpen8200ApiClient.h */,
+				A6D4D2F62088C0ED00350D1C /* GAOpen8200ApiClient.m */,
+			);
+			path = 8200_Api;
+			sourceTree = "<group>";
+		};
+		A6D4D2F72088C0ED00350D1C /* 8200_Const */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2F82088C0ED00350D1C /* GA_8200URL_Const.h */,
+				A6D4D2F92088C0ED00350D1C /* New Group */,
+			);
+			path = 8200_Const;
+			sourceTree = "<group>";
+		};
+		A6D4D2F92088C0ED00350D1C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A6D4D2FA2088C0ED00350D1C /* 8200_lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 8200_lib;
+			sourceTree = "<group>";
+		};
+		A6D4D2FB2088C0ED00350D1C /* 8200_Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 8200_Tool;
+			sourceTree = "<group>";
+		};
+		A6D4D2FD2088C0ED00350D1C /* HIKPlayerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D2FE2088C0ED00350D1C /* HIKPlayerSDK.h */,
+				A6D4D2FF2088C0ED00350D1C /* PlayerClient */,
+				A6D4D3022088C0ED00350D1C /* StreamClient */,
+			);
+			path = HIKPlayerSDK;
+			sourceTree = "<group>";
+		};
+		A6D4D2FF2088C0ED00350D1C /* PlayerClient */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D3002088C0ED00350D1C /* GA_HIKPlayer.h */,
+				A6D4D3012088C0ED00350D1C /* GA_HIKPlayer.m */,
+			);
+			path = PlayerClient;
+			sourceTree = "<group>";
+		};
+		A6D4D3022088C0ED00350D1C /* StreamClient */ = {
+			isa = PBXGroup;
+			children = (
+				A6D4D3032088C0ED00350D1C /* GA_StreamClient.h */,
+				A6D4D3042088C0ED00350D1C /* GA_StreamClient.mm */,
+				A6D4D3052088C0ED00350D1C /* NSDate+HIKPlayerSDK.h */,
+				A6D4D3062088C0ED00350D1C /* NSDate+HIKPlayerSDK.m */,
+			);
+			path = StreamClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +503,7 @@
 				A6D4D2662088C09200350D1C /* Sources */,
 				A6D4D2672088C09200350D1C /* Frameworks */,
 				A6D4D2682088C09200350D1C /* Resources */,
+				A6D4D3282088C0F900350D1C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +554,8 @@
 			files = (
 				A6D4D27A2088C09200350D1C /* LaunchScreen.storyboard in Resources */,
 				A6D4D2772088C09200350D1C /* Assets.xcassets in Resources */,
+				A6D4D3122088C0ED00350D1C /* README.md in Resources */,
+				A6D4D3112088C0ED00350D1C /* LICENSE in Resources */,
 				A6D4D2752088C09200350D1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +567,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D4D2722088C09200350D1C /* ViewController.m in Sources */,
+				A6D4D3152088C0ED00350D1C /* GA_ARO_NetworkActivityIndicatorManager.m in Sources */,
+				A6D4D31D2088C0ED00350D1C /* GA_ARO_SignUtil.m in Sources */,
+				A6D4D30E2088C0ED00350D1C /* GA_ARO_URLResponseSerialization.m in Sources */,
 				A6D4D27D2088C09200350D1C /* main.m in Sources */,
+				A6D4D2AD2088C0DF00350D1C /* NSObject+DXKeyValue.m in Sources */,
+				A6D4D3212088C0ED00350D1C /* NSDate+HIKPlayerSDK.m in Sources */,
+				A6D4D30D2088C0ED00350D1C /* GA_ARO_URLRequestSerialization.m in Sources */,
+				A6D4D2AA2088C0DF00350D1C /* DXPropertyType.m in Sources */,
+				A6D4D3092088C0ED00350D1C /* GA_ARO_Response.m in Sources */,
+				A6D4D2AF2088C0DF00350D1C /* NSString+DXExtension.m in Sources */,
+				A6D4D30A2088C0ED00350D1C /* GA_ARO_HTTPSessionManager.m in Sources */,
+				A6D4D2AE2088C0DF00350D1C /* NSObject+DXProperty.m in Sources */,
+				A6D4D31B2088C0ED00350D1C /* UIWebView+GA_ARO_Networking.m in Sources */,
+				A6D4D3082088C0ED00350D1C /* GA_ARO_Request.m in Sources */,
+				A6D4D2AC2088C0DF00350D1C /* NSObject+DXCoding.m in Sources */,
+				A6D4D3172088C0ED00350D1C /* UIButton+GA_ARO_Networking.m in Sources */,
+				A6D4D3182088C0ED00350D1C /* UIImageView+GA_ARO_Networking.m in Sources */,
+				A6D4D30C2088C0ED00350D1C /* GA_ARO_SecurityPolicy.m in Sources */,
 				A6D4D26F2088C09200350D1C /* AppDelegate.m in Sources */,
+				A6D4D3132088C0ED00350D1C /* GA_ARO_AutoPurgingImageCache.m in Sources */,
+				A6D4D3102088C0ED00350D1C /* GA_ARO_HTTPSessionManager+Synchronous.m in Sources */,
+				A6D4D2A52088C0DF00350D1C /* ApiConfig.m in Sources */,
+				A6D4D31C2088C0ED00350D1C /* GA_ARO_HttpUtil.m in Sources */,
+				A6D4D2AB2088C0DF00350D1C /* NSObject+DXClass.m in Sources */,
+				A6D4D3072088C0ED00350D1C /* GA_ARO_Client.m in Sources */,
+				A6D4D2A42088C0DF00350D1C /* PlayerViewController.m in Sources */,
+				A6D4D31E2088C0ED00350D1C /* GAOpen8200ApiClient.m in Sources */,
+				A6D4D3202088C0ED00350D1C /* GA_StreamClient.mm in Sources */,
+				A6D4D31A2088C0ED00350D1C /* UIRefreshControl+GA_ARO_Networking.m in Sources */,
+				A6D4D30B2088C0ED00350D1C /* GA_ARO_NetworkReachabilityManager.m in Sources */,
+				A6D4D2B22088C0DF00350D1C /* CameraListTableViewController.m in Sources */,
+				A6D4D3192088C0ED00350D1C /* UIProgressView+GA_ARO_Networking.m in Sources */,
+				A6D4D2A92088C0DF00350D1C /* DXPropertyKey.m in Sources */,
+				A6D4D2A82088C0DF00350D1C /* DXProperty.m in Sources */,
+				A6D4D30F2088C0ED00350D1C /* GA_ARO_URLSessionManager.m in Sources */,
+				A6D4D31F2088C0ED00350D1C /* GA_HIKPlayer.m in Sources */,
+				A6D4D2B12088C0DF00350D1C /* CameraInfo.m in Sources */,
+				A6D4D3162088C0ED00350D1C /* UIActivityIndicatorView+GA_ARO_Networking.m in Sources */,
+				A6D4D2A72088C0DF00350D1C /* DXFoundation.m in Sources */,
+				A6D4D2A62088C0DF00350D1C /* DXExtensionConst.m in Sources */,
+				A6D4D3142088C0ED00350D1C /* GA_ARO_ImageDownloader.m in Sources */,
+				A6D4D2B02088C0DF00350D1C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +744,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = ApiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.ApiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +764,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = ApiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.ApiDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

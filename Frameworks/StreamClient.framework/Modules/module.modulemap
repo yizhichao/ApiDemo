@@ -1,0 +1,6 @@
+framework module StreamClient {
+  umbrella header "StreamClient.h"
+
+  export *
+  module * { export * }
+}
